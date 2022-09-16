@@ -56403,7 +56403,7 @@ gjK(){return"\\"}}
 A.VG.prototype={
 O8(a){$.a7m().a.set(this,a)}}
 A.zE.prototype={
-N(a,b){var s,r,q=null,p=A.NZ(new A.bi(20,20)),o=A.acl("profile.png",B.k0,400),n=A.eC(q,q,B.dm,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),m=A.a8T(q)
+N(a,b){var s,r,q=null,p=A.NZ(new A.bi(20,20)),o=A.acl("images/profile.png",B.k0,400),n=A.eC(q,q,B.dm,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),m=A.a8T(q)
 m.aR=new A.Ng()
 n=A.mx(q,m,n," API endpoint ")
 m=A.eC(q,q,B.dm,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q)
@@ -56464,7 +56464,7 @@ $S:0}
 A.uv.prototype={
 al(){return new A.II(B.l)}}
 A.II.prototype={
-N(a,b){var s=null,r=A.ao4(),q=A.a([A.adA(A.a8a(B.y2,s,s),new A.a3q(r),0,"Home"),A.adA(A.a8a(B.y3,s,s),new A.a3r(r),1,"About")],t.zn),p=t.E,o=A.nA(A.a([new A.lv("Find Me A Zoo Animal!",B.m,s),A.acl("lion.png",s,400)],p),B.aU),n=A.h2("https://www.linkedin.com/in/nicholas-lee-7428a1216/",0,s),m=A.h2("https://github.com/nicholaswlee",0,s),l=A.eC(s,s,B.j,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),k=A.eC(s,s,B.r,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),j=A.NZ(new A.bi(8,8)),i=A.a([new A.hi(1,B.jU,A.aH(255,79,117,134),new A.w(0,0),10)],t.sq)
+N(a,b){var s=null,r=A.ao4(),q=A.a([A.adA(A.a8a(B.y2,s,s),new A.a3q(r),0,"Home"),A.adA(A.a8a(B.y3,s,s),new A.a3r(r),1,"About")],t.zn),p=t.E,o=A.nA(A.a([new A.lv("Find Me A Zoo Animal!",B.m,s),A.acl("images/lion.png",s,400)],p),B.aU),n=A.h2("https://www.linkedin.com/in/nicholas-lee-7428a1216/",0,s),m=A.h2("https://github.com/nicholaswlee",0,s),l=A.eC(s,s,B.j,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),k=A.eC(s,s,B.r,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),j=A.NZ(new A.bi(8,8)),i=A.a([new A.hi(1,B.jU,A.aH(255,79,117,134),new A.w(0,0),10)],t.sq)
 k=A.ap6(A.aH(255,79,117,134),new A.e_(s,s,s,j,i,s,s,B.aw),B.dy,B.ku,B.kp,B.j,l,B.r,k)
 l=A.a([A.jJ(s,new A.v9(s),B.u,s,s,s,s,s,s,s,s,s,s),A.jJ(s,A.a7M(new A.zE(s),s,s),B.u,s,s,s,s,s,s,s,s,s,s)],p)
 return A.EI(A.a([new A.vR(r,q,new A.cN(B.aP,o,s),new A.Cz(n,m,s),k,new A.a3s(),s),A.Qz(new A.uM(r,new A.ZE(l,A.aQ([null,0],t.LO,t.S)),s))],p),B.bo,B.aU,B.bC)}}

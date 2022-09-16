@@ -38,8 +38,8 @@ class LinkFooter extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Body(text: "Nicholas Lee"),
         ),
-        IconButton(onPressed: (){_launchUrl(linkedInUrl);}, icon:FaIcon(FontAwesomeIcons.github, size: 20)),
-        IconButton(onPressed: (){_launchUrl(githubUrl);}, icon: FaIcon(FontAwesomeIcons.linkedin, size: 20)),
+        IconButton(onPressed: (){_launchUrl(githubUrl);}, icon:FaIcon(FontAwesomeIcons.github, size: 20)),
+        IconButton(onPressed: (){_launchUrl(linkedInUrl);}, icon: FaIcon(FontAwesomeIcons.linkedin, size: 20)),
 
       ],
       )

@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:random_animals_web_app/components/text_displays.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -38,14 +39,17 @@ class AboutPage extends StatelessWidget{
                         textAlign: TextAlign.center,
                         text: TextSpan(
                           children: [
-                            const TextSpan(
+                            TextSpan(
                               text: 'Hello, I am Nicholas Lee a second year at the University of Chicago studying Computer Science and Economics.'
-                                    ' I built this web app all in Dart within the Flutter Environment. I used this'
+                                    ' I built this web app all in Dart within the Flutter Environment. I used this',
+                              style: GoogleFonts.oswald()
                             ),
                             TextSpan(
                               text: " API endpoint ",
-                              style: TextStyle(
-                                color: Colors.blue
+                              style: GoogleFonts.oswald(
+                                textStyle: TextStyle(
+                                  color: Colors.blue
+                                )
                               ),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () async {
@@ -55,15 +59,18 @@ class AboutPage extends StatelessWidget{
                                       }
                                 },
                             ),
-                            const TextSpan(
+                            TextSpan(
                               text: 'to find data about zoo'
                                     ' animals and used the concept of state to allow a user to randomly generate an animal with every button click.'
                                     ' To learn more about me, you can checkout my website ',
+                              style: GoogleFonts.oswald()
                             ),
                             TextSpan(
                               text: "here",
-                              style: TextStyle(
-                                color: Colors.blue
+                              style: GoogleFonts.oswald(
+                                textStyle: TextStyle(
+                                  color: Colors.blue
+                                )
                               ),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () async {

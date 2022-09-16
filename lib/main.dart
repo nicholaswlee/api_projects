@@ -5,7 +5,7 @@ import 'package:random_animals_web_app/components/animal_display.dart';
 import 'package:random_animals_web_app/components/button.dart';
 import 'package:http/http.dart' as http;
 import 'package:random_animals_web_app/components/text_displays.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 import 'components/animal_data.dart';
 import 'components/navigation_menu.dart';
 
@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'Find Me A Zoo Animal!',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textTheme: GoogleFonts.oswaldTextTheme()
       ),
       home: const HomePage(title: 'Find Me A Zoo Animal!'),
     );
