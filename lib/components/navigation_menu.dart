@@ -55,7 +55,7 @@ class _NavigationBarSideState extends State<NavigationBarSide> {
               child: Column(
                 children: [
                   Heading(title: "Find Me A Zoo Animal!"),
-                  Image.asset('lion.png', width: 400,),
+                  Image.asset('images/lion.png', width: 400,),
                 ],
               ),
             ),

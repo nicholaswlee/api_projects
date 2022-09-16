@@ -27,7 +27,7 @@ class AboutPage extends StatelessWidget{
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Image.asset(
-                      'profile.png',
+                      'images/profile.png',
                       width: 400,
                       fit: BoxFit.contain
                     ),
