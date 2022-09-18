@@ -10,6 +10,7 @@ import 'components/animal_data.dart';
 import 'components/navigation_menu.dart';
 
 void main() {
+  
   runApp(const MyApp());
 }
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Find Me A Zoo Animal!',
+      title: 'Nicholas\s API Projects!',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         textTheme: GoogleFonts.oswaldTextTheme()

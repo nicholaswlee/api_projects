@@ -41,8 +41,39 @@ class AboutPage extends StatelessWidget{
                           children: [
                             TextSpan(
                               text: 'Hello, I am Nicholas Lee a second year at the University of Chicago studying Computer Science and Economics.'
-                                    ' I built this web app all in Dart within the Flutter Environment. I used this',
-                              style: GoogleFonts.oswald()
+                                    ' I built this web app all in Dart within the Flutter Environment. When creating the muscle group exercises page,'
+                                    'I used this',
+                              style: GoogleFonts.oswald(
+                                textStyle: TextStyle(
+                                  color: Colors.black
+                                )
+                              )
+                            ),
+                            TextSpan(
+                              text: " API endpoint ",
+                              style: GoogleFonts.oswald(
+                                textStyle: TextStyle(
+                                  color: Colors.blue
+                                )
+                              ),
+                              recognizer: TapGestureRecognizer()
+                                ..onTap = () async {
+                                    final Uri url = Uri.parse('https://wger.de/en/software/api');
+                                      if (!await launchUrl(url)) {
+                                        throw 'Could not launch $url';
+                                      }
+                                },
+                            ),
+                            TextSpan(
+                              text: 'to gather data on different muscles. I was able to first use the endpoint /muscles/ to retrieve the muscle ID, and then'
+                                    ' used that ID to retrieve exercises from the endpoint /exercises/. From there, I used the /exerciseimage/ endpoint'
+                                    ' to obtain the images related to that exercise if any. To create the random zoo animal generator, '
+                                    'I used this',
+                              style: GoogleFonts.oswald(
+                                textStyle: TextStyle(
+                                  color: Colors.black
+                                )
+                              )
                             ),
                             TextSpan(
                               text: " API endpoint ",
@@ -63,7 +94,11 @@ class AboutPage extends StatelessWidget{
                               text: 'to find data about zoo'
                                     ' animals and used the concept of state to allow a user to randomly generate an animal with every button click.'
                                     ' To learn more about me, you can checkout my website ',
-                              style: GoogleFonts.oswald()
+                              style: GoogleFonts.oswald(
+                                textStyle: TextStyle(
+                                  color: Colors.black
+                                )
+                              )
                             ),
                             TextSpan(
                               text: "here",
@@ -82,6 +117,9 @@ class AboutPage extends StatelessWidget{
                             ),
                             TextSpan(
                               text: ".",
+                              style: TextStyle(
+                                color: Colors.black
+                              )
                             ),
                           ],
                         ),

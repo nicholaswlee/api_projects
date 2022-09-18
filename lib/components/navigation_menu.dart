@@ -1,6 +1,8 @@
 import 'package:easy_sidemenu/easy_sidemenu.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:random_animals_web_app/components/about_me.dart';
+import 'package:random_animals_web_app/components/muscle_search.dart';
 import 'package:random_animals_web_app/components/random_animal_page.dart';
 import 'button.dart';
 import 'text_displays.dart';
@@ -29,18 +31,25 @@ class _NavigationBarSideState extends State<NavigationBarSide> {
     PageController page = PageController();
     List<SideMenuItem> items = [
       SideMenuItem(
-        // Priority of item to show on SideMenu, lower value is displayed at the top
         priority: 0,
-        title: 'Home',
+        title: 'Muscle Group Exercises',
         onTap: () => page.jumpToPage(0),
-        icon: Icon(Icons.home),
+        icon: Icon(Icons.fitness_center),
       ),
       SideMenuItem(
+        // Priority of item to show on SideMenu, lower value is displayed at the top
         priority: 1,
-        title: 'About',
+        title: 'Find me an Animal!',
         onTap: () => page.jumpToPage(1),
+        icon: Icon(Icons.pets),
+      ),
+      SideMenuItem(
+        priority: 2,
+        title: 'About',
+        onTap: () => page.jumpToPage(2),
         icon: Icon(Icons.person),
       ),
+      
     ];
     return(
       Row(
@@ -54,7 +63,7 @@ class _NavigationBarSideState extends State<NavigationBarSide> {
               padding: const EdgeInsets.fromLTRB(8, 8, 8, 8),
               child: Column(
                 children: [
-                  Heading(title: "Find Me A Zoo Animal!"),
+                  Heading(title: "Nicholas\s API Projects!"),
                   Image.asset('images/lion.png', width: 400,),
                 ],
               ),
@@ -94,6 +103,11 @@ class _NavigationBarSideState extends State<NavigationBarSide> {
               controller: page,
               children: [
                 Container(
+                  child: Center(
+                    child: MuscleSearchPage(),
+                  ),
+                ),
+                Container(
                   child: RandomAnimalPage()
                 ),
                 Container(
@@ -101,6 +115,7 @@ class _NavigationBarSideState extends State<NavigationBarSide> {
                     child: AboutPage(),
                   ),
                 ),
+                
               ],
             ),
           ),
