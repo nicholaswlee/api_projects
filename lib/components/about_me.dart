@@ -109,7 +109,7 @@ class AboutPage extends StatelessWidget{
                               ),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () async {
-                                    final Uri url = Uri.parse('https://nicholaswlee.github.io/personal-website/');
+                                    final Uri url = Uri.parse('https://nicholaswlee.github.io');
                                       if (!await launchUrl(url)) {
                                         throw 'Could not launch $url';
                                       }
