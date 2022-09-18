@@ -16,12 +16,16 @@ class _ExerciseDisplayState extends State<ExerciseDisplay> {
   @override
   Widget build(BuildContext context) {
     if(widget.isLoading == true){
-      return Center(
-        child: SizedBox(
-                height: 10,
-                child: LinearProgressIndicator(
-                  minHeight: 3
-                )
+      return Container(
+        height: 400,
+        child: Center(
+
+          child: SizedBox(
+                  height: 10,
+                  child: LinearProgressIndicator(
+                    minHeight: 3
+                  )
+          ),
         ),
       );
     }else if(widget.exercises.length == 0){
