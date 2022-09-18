@@ -1,16 +1,7 @@
-# random_animals_web_app
+# Random Animals Web Application
 
-A new Flutter project.
+A site created in Flutter. To view the source code, check out the lib folder! 
 
-## Getting Started
+## The breakdown of the site
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Uses the API https://zoo-animal-api.herokuapp.com to retrieve facts about various zoo animals. Created my own Animal data class to store this API data and then show it on the site. Used state managment within the home page to allow for the user to retrieve a random animal everytime they click a button. Checkout the site here: https://nicholaswlee.github.io/random_animals/#/
