@@ -42,7 +42,7 @@ class AboutPage extends StatelessWidget{
                             TextSpan(
                               text: 'Hello, I am Nicholas Lee a second year at the University of Chicago studying Computer Science and Economics.'
                                     ' I built this web app all in Dart within the Flutter Environment. When creating the muscle group exercises page,'
-                                    'I used this',
+                                    'I used this REST',
                               style: GoogleFonts.oswald(
                                 textStyle: TextStyle(
                                   color: Colors.black
